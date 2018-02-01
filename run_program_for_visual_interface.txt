@@ -1,0 +1,30 @@
+This program contains a visual interface. It is required that the folder
+"images" be included at the root of the project folder as well as all the files
+that are supposed to be contained within the images folder.
+
+As backup, if the "images" folder or any of its required content is missing,
+the program will run by the Java console only.
+
+--------------------------------
+
+**Note about visual program
+
+On a rare occasion, the program will throw the exception,
+ConcurrentModificationException. This is a result of the painting of graphics
+by the for-each loop in the inherited protected method, paintComponent(), in
+the VisualRepresentor class. The for-each loops are needed to paint custom
+graphics over the default Java graphics for their components.
+
+The main problem from this arises from the fact that the algorithm for painting
+graphics runs in a separate thread. This is Java's implementation of component
+drawing and cannot be changed. As the painting thread runs, the main thread may
+end up modifying the for-each loop containers concurrently to being accessed by
+the painting thread, and from thus, the exception will be thrown.
+
+Due to my limited knowledge of multi-threading and time, I could not fix it by
+the time this was submitted.
+
+**As far as I am aware of, the exception does not break the program flow but
+  simply causes visual skipping. Please excuse this program error if it occurs.
+  If it does cause a full error, either rerun the GUI or remove anything
+  related to the images folder and have the program run just by the console.
