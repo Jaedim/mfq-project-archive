@@ -1,6 +1,6 @@
 # Multilevel Feedback Queue Simulation
 
-This repository is more or less an archive for this project. This is here mainly just for my own reference, but is open for all to understand and learn. I highly do not recommend using any of the code, as it is largely messy, but it can be used to learn a few things, if needed.
+This repository is more or less an archive for this project. This is here mainly just for my own reference, but is open for everyone to examine at leisure. I highly do not recommend using any of the code, as it is largely messy, but it can be used to learn a few things, if needed.
 
 Feel free to download this and use as a basic visual simulator for one approach to the MFQ concept. To run
 
@@ -9,6 +9,7 @@ java -cp bin/ Driver
 ```
 
 in the source directory.
+
 
 As the title suggests, this is a simulation of a multilevel feedback queue as if it were in a CPU. The purpose is to show how a queue can be used and how a basic CPU scheduler may utilize the data structure. This simulation houses four queues to represent their priority in the scheduler, with the final queue being the lowest priority. Jobs that come into the scheduler will be placed at the top and move down as they take more time. In the final queue, the jobs will simply loop round-robin style until they are finished.
 
