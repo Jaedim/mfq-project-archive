@@ -1,6 +1,6 @@
 # Multilevel Feedback Queue Simulation
 
-This repository is more or less an archive for this project. This is here mainly just for my own reference, but is open for everyone to examine at leisure. I highly do not recommend using any of the code, as it is largely messy, but it can be used to learn a few things, if needed.
+This repository is more or less an archive for this project. This is here mainly just for my own reference, but is open for everyone to examine at leisure. I highly do not recommend using any of the code, as it is largely messy, but it can be used to learn a few things if needed.
 
 Feel free to download this and use as a basic visual simulator for one approach to the MFQ concept. To run from the terminal, use
 
@@ -8,7 +8,7 @@ Feel free to download this and use as a basic visual simulator for one approach 
 java -cp bin/ Driver
 ```
 
-in the source directory.
+in the project root directory.
 
 ## Project Information
 
