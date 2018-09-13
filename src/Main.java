@@ -1,26 +1,16 @@
 import java.io.*;
 import java.util.Scanner;
 
-/**
- * Entry point for the program. The control of flow starts here and is
- * ended here. Contains the interaction of main objects of the program.
- *
- */
-public class Driver {
-	/**
-	 * Main entry for program. It handles all visible exceptions by
-	 * outputting one or more strings and closing gracefully.
-	 * @param args
-	 * @throws InterruptedException 
-	 */
+public class Main {
+	
 	public static void main(String[] args) throws InterruptedException {       
 		PrintWriter pw = null;
 		Scanner fileInput = null;
 		MFQ vm = null;
 		
 		try {
-			pw = new PrintWriter(new FileWriter("csis.txt"));
-			fileInput = new Scanner(new File("mfq.txt"));
+			pw = new PrintWriter(new FileWriter("output.txt"));
+			fileInput = new Scanner(new File("input.txt"));
 			vm = new MFQ(fileInput, pw); // "virtual machine"
 			
 		} catch (IOException e) {

@@ -1,7 +1,4 @@
 
-/**
- * Abstracts a CPU for the use of the MFQ simulation.
- */
 public class CPU {
 
 // ---------- Field members
